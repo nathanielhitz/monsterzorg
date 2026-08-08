@@ -8,6 +8,7 @@ import MotionLayer from "@/components/MotionLayer";
 import Nav from "@/components/Nav";
 import Over from "@/components/Over";
 import Waarom from "@/components/Waarom";
+import ZwevendeContact from "@/components/ZwevendeContact";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <ZwevendeContact />
     </>
   );
 }

@@ -10,18 +10,10 @@ import {
   contact,
   contactSectie,
   cta,
-  isIngevuld,
+  mailHref,
   persoon,
+  telHref,
 } from "@/content";
-
-/** Placeholders leveren geen werkende link op, dus dan blijft de href leeg. */
-function telHref(nummer: string) {
-  return isIngevuld(nummer) ? `tel:${nummer.replace(/[^\d+]/g, "")}` : undefined;
-}
-
-function mailHref(adres: string) {
-  return isIngevuld(adres) ? `mailto:${adres}` : undefined;
-}
 
 export default function Contact() {
   const bellen = telHref(contact.telefoon);

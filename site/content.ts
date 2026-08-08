@@ -18,6 +18,18 @@ export function isIngevuld(waarde: string): boolean {
   return waarde.trim().length > 0 && !isPlaceholder(waarde);
 }
 
+/**
+ * Bel- en maillinks. Zolang het veld nog een placeholder is komt er geen href
+ * uit, zodat er nooit een kapotte tel:- of mailto:-link op de pagina staat.
+ */
+export function telHref(nummer: string): string | undefined {
+  return isIngevuld(nummer) ? `tel:${nummer.replace(/[^\d+]/g, "")}` : undefined;
+}
+
+export function mailHref(adres: string): string | undefined {
+  return isIngevuld(adres) ? `mailto:${adres}` : undefined;
+}
+
 export const site = {
   naam: "Monster Zorg",
   // Domeinnaam nog niet geverifieerd, aanname uit het design-doc.
