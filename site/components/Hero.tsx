@@ -64,24 +64,29 @@ export default function Hero() {
           </div>
 
           <div data-hero-step className="lg:col-span-6">
-            <div className="relative mx-auto max-w-[480px] lg:mr-0 lg:ml-auto">
-              {/* Zacht groen vlak achter de foto, geeft de hero diepte */}
+            <div className="relative mx-auto max-w-[16rem] sm:max-w-[480px] lg:mr-0 lg:ml-auto">
+              {/* Zacht groen vlak achter de foto, geeft de hero diepte. Alleen
+                  vanaf sm, want daar staat de foto staand in een rechthoek. */}
               <div
                 aria-hidden
-                className="absolute -top-4 -right-4 bottom-8 left-10 rounded-3xl bg-forest-tint"
+                className="absolute -top-4 -right-4 bottom-8 left-10 hidden rounded-3xl bg-forest-tint sm:block"
               />
-              {/* Op telefoons een vierkante uitsnede: dat scheelt bijna 90px
-                  hoogte en de foto is zelf vierkant, dus er wordt niets
-                  ongunstig afgesneden. Vanaf sm weer het staande formaat. */}
-              <div className="relative aspect-square overflow-hidden rounded-3xl bg-forest-tint shadow-[0_28px_60px_-30px_rgba(23,33,28,0.45)] sm:aspect-4/5">
+              {/* Op telefoons een kleinere ronde pasfoto met een zachte groene
+                  rand, in dezelfde tint als het vlak op desktop. Vanaf sm weer
+                  het staande formaat met afgeronde hoeken. */}
+              <div className="relative aspect-square overflow-hidden rounded-full bg-forest-tint shadow-[0_28px_60px_-30px_rgba(23,33,28,0.45)] ring-8 ring-forest-tint sm:aspect-4/5 sm:rounded-3xl sm:ring-0">
                 <Image
                   data-parallax
                   src={persoon.foto}
                   alt={persoon.fotoAlt}
                   fill
                   priority
-                  sizes="(max-width: 1024px) 90vw, 480px"
-                  className="scale-110 object-cover object-[center_18%]"
+                  sizes="(max-width: 639px) 272px, (max-width: 1024px) 90vw, 480px"
+                  // De foto is vierkant, dus in de ronde uitsnede doet
+                  // object-position niets en bepaalt het zoompunt de
+                  // beeldvulling. Dat ligt hoger dan het midden, anders valt de
+                  // bovenkant van het hoofd net buiten de cirkel.
+                  className="scale-110 origin-[center_35%] object-cover object-[center_18%] sm:origin-center"
                 />
               </div>
             </div>
