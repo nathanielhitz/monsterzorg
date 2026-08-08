@@ -229,4 +229,9 @@ export const footer = {
   kvkLabel: "KvK",
   copyright: `${new Date().getFullYear()} ${site.naam}`,
   linkedinLabel: "LinkedIn",
+  bouwer: {
+    label: "Built by",
+    naam: "HitzDigital",
+    url: "https://www.hitzdigital.nl/",
+  },
 };

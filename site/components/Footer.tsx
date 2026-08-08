@@ -14,7 +14,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="flex flex-col gap-3 sm:items-end">
+        <div className="flex flex-col gap-2.5 sm:items-end">
           <a
             href={contact.linkedin}
             target="_blank"
@@ -25,6 +25,17 @@ export default function Footer() {
             {footer.linkedinLabel}
           </a>
           <p className="text-[14px] text-muted">&copy; {footer.copyright}</p>
+          <p className="text-[14px] text-muted">
+            {footer.bouwer.label}{" "}
+            <a
+              href={footer.bouwer.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-ink transition-colors duration-200 hover:text-forest"
+            >
+              {footer.bouwer.naam}
+            </a>
+          </p>
         </div>
       </div>
     </footer>
