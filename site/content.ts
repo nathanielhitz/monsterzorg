@@ -36,7 +36,7 @@ export const persoon = {
 };
 
 export const contact = {
-  telefoon: "[TELEFOONNUMMER]",
+  telefoon: "06 45046864",
   email: "[E-MAILADRES]",
   kvk: "[KVK-NUMMER]",
   werkgebied: "[WERKGEBIED]",
