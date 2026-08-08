@@ -17,17 +17,9 @@ export default function Hero() {
       <div className="shell relative">
         <div className="grid items-center gap-8 sm:gap-10 md:gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-6">
-            <p
-              data-hero-step
-              className="flex items-center gap-3 text-sm font-medium tracking-[0.14em] text-forest uppercase"
-            >
-              <span aria-hidden className="h-px w-8 bg-forest/40" />
-              {hero.merkregel}
-            </p>
-
             <h1
               data-hero-step
-              className="mt-4 font-display text-[clamp(2.25rem,1.4rem+4vw,2.625rem)] leading-[1.04] font-semibold tracking-tight text-balance text-ink sm:mt-6 sm:text-5xl lg:text-[3.4rem]"
+              className="font-display text-[clamp(2.25rem,1.4rem+4vw,2.625rem)] leading-[1.04] font-semibold tracking-tight text-balance text-ink sm:text-5xl lg:text-[3.4rem]"
             >
               {hero.titel}
             </h1>
