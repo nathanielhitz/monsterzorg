@@ -64,7 +64,7 @@ export const hero = {
   merkregel: "Monster Zorg",
   titel: "Ervaren zorgprofessional, flexibel inzetbaar.",
   tekst:
-    "Ik ben Jarno Monster, toegepast psycholoog met ruim 8 jaar ervaring in de woonbegeleiding. Sinds 2026 zelfstandig.",
+    "Ik ben Jarno Monster, toegepast psycholoog met ruim 8 jaar ervaring in de woonbegeleiding.",
 };
 
 export const over = {
