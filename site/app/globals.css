@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+/*
+  Monster Zorg design tokens.
+
+  Palet: warm bone/creme als basis met diep groen als enige accentkleur.
+  Gekozen op de portretfoto van Jarno, die veel warm amber en olijf bevat.
+  De pagina staat vast in de lichte modus, zoals het design-doc voorschrijft.
+
+  Vormenregel (één systeem voor de hele pagina):
+  - alles wat je kunt aanklikken is een volledig ronde pil (rounded-full)
+  - alle vlakken, kaarten en beelden zijn 24px afgerond (rounded-3xl)
+*/
+
+@theme {
+  --font-display: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+
+  --color-bone: #f6f2e9;
+  --color-surface: #fffcf5;
+  --color-ink: #17211c;
+  --color-muted: #57655c;
+  --color-line: #e3ddd0;
+  --color-forest: #1e4034;
+  --color-forest-deep: #142c24;
+  --color-forest-tint: #e9eee6;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  background-color: var(--color-bone);
+}
+
+body {
+  background-color: var(--color-bone);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--color-forest);
+  color: var(--color-bone);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-forest);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/*
+  Startposities voor de animaties.
+
+  Het attribuut data-anim="on" wordt door een klein script in de <head> gezet,
+  en alleen wanneer de bezoeker geen prefers-reduced-motion aan heeft staan.
+  Staat het script uit of is JavaScript uitgeschakeld, dan is alle inhoud
+  gewoon meteen zichtbaar. GSAP animeert daarna naar de eindpositie.
+*/
+@media (prefers-reduced-motion: no-preference) {
+  html[data-anim="on"] [data-reveal],
+  html[data-anim="on"] [data-hero-step] {
+    opacity: 0;
+    transform: translateY(18px);
+    will-change: transform, opacity;
+  }
+
+  html[data-anim="on"] [data-rail] {
+    transform: scaleY(0);
+    transform-origin: top center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

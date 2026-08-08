@@ -1,0 +1,32 @@
+import { LinkedinLogo } from "@phosphor-icons/react/ssr";
+import { contact, footer, nav } from "@/content";
+
+export default function Footer() {
+  return (
+    <footer className="border-t border-line">
+      <div className="mx-auto flex max-w-[1200px] flex-col gap-6 px-5 py-10 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <p className="font-display text-[17px] font-semibold text-ink">
+            {nav.merk}
+          </p>
+          <p className="mt-1.5 text-[14px] text-muted">
+            {footer.kvkLabel} {contact.kvk}
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-3 sm:items-end">
+          <a
+            href={contact.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-[14px] text-muted transition-colors duration-200 hover:text-forest"
+          >
+            <LinkedinLogo size={17} />
+            {footer.linkedinLabel}
+          </a>
+          <p className="text-[14px] text-muted">&copy; {footer.copyright}</p>
+        </div>
+      </div>
+    </footer>
+  );
+}
