@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden pt-16 pb-20 md:pt-20 md:pb-24 lg:flex lg:min-h-[calc(100dvh-68px)] lg:items-center lg:pt-14"
+      className="relative overflow-hidden pt-9 pb-12 sm:pt-14 sm:pb-16 md:pt-20 md:pb-24 lg:flex lg:min-h-[calc(100dvh-68px)] lg:items-center lg:pt-14"
     >
       {/* Warme gloed rechtsboven, in dezelfde familie als de foto */}
       <div
@@ -14,8 +14,8 @@ export default function Hero() {
         className="pointer-events-none absolute -top-40 right-[-15%] h-[520px] w-[520px] rounded-full bg-forest-tint blur-3xl"
       />
 
-      <div className="relative mx-auto w-full max-w-[1200px] px-5">
-        <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
+      <div className="shell relative">
+        <div className="grid items-center gap-8 sm:gap-10 md:gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-6">
             <p
               data-hero-step
@@ -27,25 +27,25 @@ export default function Hero() {
 
             <h1
               data-hero-step
-              className="mt-6 font-display text-[2.5rem] leading-[1.04] font-semibold tracking-tight text-balance text-ink sm:text-5xl lg:text-[3.4rem]"
+              className="mt-4 font-display text-[clamp(2.25rem,1.4rem+4vw,2.625rem)] leading-[1.04] font-semibold tracking-tight text-balance text-ink sm:mt-6 sm:text-5xl lg:text-[3.4rem]"
             >
               {hero.titel}
             </h1>
 
             <p
               data-hero-step
-              className="mt-6 max-w-[46ch] text-lg leading-relaxed text-muted"
+              className="mt-4 max-w-[46ch] text-[17px] leading-[1.5] text-muted sm:mt-6 sm:text-lg sm:leading-relaxed"
             >
               {hero.tekst}
             </p>
 
             <div
               data-hero-step
-              className="mt-9 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center"
+              className="mt-6 flex flex-col items-stretch gap-3 sm:mt-9 sm:flex-row sm:items-center"
             >
               <a
                 href="#contact"
-                className="group inline-flex items-center justify-center gap-2 rounded-full bg-forest px-6 py-3.5 font-medium text-bone transition-colors duration-200 hover:bg-forest-deep active:scale-[0.98]"
+                className="group inline-flex min-h-[54px] items-center justify-center gap-2 rounded-full bg-forest px-6 py-3 text-[17px] font-medium text-bone transition-colors duration-200 hover:bg-forest-deep active:scale-[0.98] sm:py-3.5 sm:text-base"
               >
                 {cta.contact}
                 <ArrowRight
@@ -56,7 +56,7 @@ export default function Hero() {
               </a>
               <a
                 href="#ervaring"
-                className="inline-flex items-center justify-center rounded-full border border-line bg-surface px-6 py-3.5 font-medium text-ink transition-colors duration-200 hover:border-forest/40 hover:text-forest active:scale-[0.98]"
+                className="inline-flex min-h-[54px] items-center justify-center rounded-full border border-line bg-surface px-6 py-3 text-[17px] font-medium text-ink transition-colors duration-200 hover:border-forest/40 hover:text-forest active:scale-[0.98] sm:py-3.5 sm:text-base"
               >
                 {cta.ervaring}
               </a>
@@ -70,7 +70,10 @@ export default function Hero() {
                 aria-hidden
                 className="absolute -top-4 -right-4 bottom-8 left-10 rounded-3xl bg-forest-tint"
               />
-              <div className="relative aspect-4/5 overflow-hidden rounded-3xl bg-forest-tint shadow-[0_28px_60px_-30px_rgba(23,33,28,0.45)]">
+              {/* Op telefoons een vierkante uitsnede: dat scheelt bijna 90px
+                  hoogte en de foto is zelf vierkant, dus er wordt niets
+                  ongunstig afgesneden. Vanaf sm weer het staande formaat. */}
+              <div className="relative aspect-square overflow-hidden rounded-3xl bg-forest-tint shadow-[0_28px_60px_-30px_rgba(23,33,28,0.45)] sm:aspect-4/5">
                 <Image
                   data-parallax
                   src={persoon.foto}

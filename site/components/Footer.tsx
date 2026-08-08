@@ -4,7 +4,7 @@ import { contact, footer, nav } from "@/content";
 export default function Footer() {
   return (
     <footer className="border-t border-line">
-      <div className="mx-auto flex max-w-[1200px] flex-col gap-6 px-5 py-10 sm:flex-row sm:items-center sm:justify-between">
+      <div className="shell flex flex-col gap-6 py-10 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="font-display text-[17px] font-semibold text-ink">
             {nav.merk}

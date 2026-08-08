@@ -3,10 +3,10 @@ import { cta, nav } from "@/content";
 export default function Nav() {
   return (
     <header className="sticky top-0 z-40 border-b border-line/70 bg-bone/85 backdrop-blur-md">
-      <div className="mx-auto flex h-[68px] max-w-[1200px] items-center justify-between gap-6 px-5">
+      <div className="shell flex h-[68px] items-center justify-between gap-4 sm:gap-6">
         <a
           href="#top"
-          className="font-display text-[17px] font-semibold tracking-tight text-ink"
+          className="font-display text-base font-semibold tracking-tight text-ink sm:text-[17px]"
         >
           {nav.merk}
         </a>
@@ -25,7 +25,8 @@ export default function Nav() {
 
         <a
           href="#contact"
-          className="rounded-full bg-forest px-4 py-2 text-sm font-medium text-bone transition-colors duration-200 hover:bg-forest-deep sm:px-5"
+          // Op touchscreens minstens 44px hoog, vanaf sm weer de compacte pil
+          className="inline-flex min-h-[44px] shrink-0 items-center rounded-full bg-forest px-3.5 py-2 text-[13px] font-medium whitespace-nowrap text-bone transition-colors duration-200 hover:bg-forest-deep sm:min-h-0 sm:px-5 sm:text-sm"
         >
           {cta.contact}
         </a>

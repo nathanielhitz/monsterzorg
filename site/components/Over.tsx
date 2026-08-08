@@ -3,7 +3,7 @@ import { over } from "@/content";
 export default function Over() {
   return (
     <section id="over" className="py-24 md:py-32">
-      <div className="mx-auto max-w-[1200px] px-5">
+      <div className="shell">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-7">
             <h2

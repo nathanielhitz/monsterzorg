@@ -9,7 +9,7 @@ const iconen = {
 export default function Diensten() {
   return (
     <section id="diensten" className="bg-surface py-24 md:py-32">
-      <div className="mx-auto max-w-[1200px] px-5">
+      <div className="shell">
         <div className="max-w-[46ch]">
           <h2
             data-reveal

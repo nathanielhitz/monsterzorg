@@ -29,7 +29,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="pt-24 pb-24 md:pt-32 md:pb-32">
-      <div className="mx-auto max-w-[1200px] px-5">
+      <div className="shell">
         <div
           data-reveal
           className="overflow-hidden rounded-3xl bg-forest px-7 py-12 text-bone md:px-14 md:py-16"

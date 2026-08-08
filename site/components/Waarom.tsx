@@ -53,7 +53,7 @@ const vlakken = [
 export default function Waarom() {
   return (
     <section className="bg-surface py-24 md:py-32">
-      <div className="mx-auto max-w-[1200px] px-5">
+      <div className="shell">
         <h2
           data-reveal
           className="max-w-[20ch] font-display text-3xl font-semibold tracking-tight text-ink md:text-[2.6rem]"
