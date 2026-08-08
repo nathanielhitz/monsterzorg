@@ -4,7 +4,7 @@ import { contact, footer, nav } from "@/content";
 export default function Footer() {
   return (
     <footer className="border-t border-line">
-      <div className="shell flex flex-col gap-6 py-10 sm:flex-row sm:items-center sm:justify-between">
+      <div className="shell flex flex-col gap-6 py-8 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="font-display text-[17px] font-semibold text-ink">
             {nav.merk}
@@ -24,18 +24,22 @@ export default function Footer() {
             <LinkedinLogo size={17} />
             {footer.linkedinLabel}
           </a>
-          <p className="text-[14px] text-muted">&copy; {footer.copyright}</p>
-          <p className="text-[14px] text-muted">
-            {footer.bouwer.label}{" "}
-            <a
-              href={footer.bouwer.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium text-ink transition-colors duration-200 hover:text-forest"
-            >
-              {footer.bouwer.naam}
-            </a>
-          </p>
+          {/* Copyright en de credit naast elkaar, dat scheelt een regel.
+              Op heel smalle schermen vallen ze netjes onder elkaar. */}
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-1 text-[14px] text-muted sm:justify-end">
+            <p>&copy; {footer.copyright}</p>
+            <p>
+              {footer.bouwer.label}{" "}
+              <a
+                href={footer.bouwer.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-ink transition-colors duration-200 hover:text-forest"
+              >
+                {footer.bouwer.naam}
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
