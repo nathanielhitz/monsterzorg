@@ -26,8 +26,6 @@ npm run build   # productiebuild
 
 Deze gegevens staan als placeholder in `content.ts` en moeten nog van Jarno komen:
 
-- `[TELEFOONNUMMER]`
-- `[E-MAILADRES]`
 - `[KVK-NUMMER]`
 - `[WERKGEBIED]`
 

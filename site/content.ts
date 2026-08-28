@@ -36,7 +36,7 @@ export const site = {
   url: "https://monsterzorg.nl",
   title: "Monster Zorg | Zzp zorgverlener en toegepast psycholoog",
   description:
-    "Jarno Monster is zelfstandig zorgverlener en toegepast psycholoog met ruim 8 jaar ervaring in de woonbegeleiding. Flexibel inzetbaar voor zorginstellingen en bemiddelingsbureaus.",
+    "Jarno Monster is zelfstandig zorgverlener en toegepast psycholoog met ruim 8 jaar ervaring als persoonlijk begeleider. Holistische blik, flexibel inzetbaar voor zorginstellingen en bemiddelingsbureaus.",
 };
 
 export const persoon = {
@@ -49,7 +49,7 @@ export const persoon = {
 
 export const contact = {
   telefoon: "06 45046864",
-  email: "[E-MAILADRES]",
+  email: "info@monsterzorg.nl",
   kvk: "[KVK-NUMMER]",
   werkgebied: "[WERKGEBIED]",
   linkedin: "https://www.linkedin.com/in/jarnomonster",
@@ -75,20 +75,22 @@ export const nav = {
 export const hero = {
   titel: "Ervaren zorgprofessional, flexibel inzetbaar.",
   tekst:
-    "Ik ben Jarno Monster, toegepast psycholoog met ruim 8 jaar ervaring in de woonbegeleiding.",
+    "Ik ben Jarno Monster, toegepast psycholoog met ruim 8 jaar ervaring als persoonlijk begeleider.",
 };
 
 export const over = {
   titel: "Even voorstellen",
   alineas: [
-    "Mijn naam is Jarno Monster. Ruim acht jaar werkte ik als woonbegeleider bij Profila Zorggroep, eerst in Puttershoek en later in Rotterdam. In die jaren heb ik geleerd hoe veel het scheelt als je echt de tijd neemt voor iemand. Rust, duidelijkheid en af en toe een grap doen vaak meer dan een dik dossier.",
-    "Naast dat werk rondde ik in 2025 mijn hbo Toegepaste Psychologie af. Daardoor kijk ik net wat anders naar gedrag. Ik zie eerder waar iets vandaan komt en wat er nodig is om een stap verder te komen.",
-    "Sinds januari 2026 werk ik zelfstandig onder de naam Monster Zorg. Zo kan ik zijn waar ik het hardst nodig ben, of dat nu voor een paar diensten is of voor een langere periode.",
+    "Mijn naam is Jarno Monster. Ruim acht jaar werkte ik als (persoonlijk) begeleider bij Profila Zorggroep op twee verschillende locaties. In die jaren heb ik geleerd dat persoonlijke aandacht en kijken naar de behoeften van cliënten belangrijke pijlers zijn voor de zorg en ondersteuning van hulpbehoevende mensen. Waar voorheen de focus lag op probleemgedrag en het beheersen ervan, merk ik dat veel organisaties kijken naar een menswaardig bestaan voor hun cliënten. Dit sluit aan bij mijn visie op het verlenen van de juiste zorg.",
+    "Ik heb mijzelf ontwikkeld als een zelfverzekerde en betrouwbare professional met een holistische benadering. Met een zelfkritische houding kijk ik naar mogelijkheden in plaats van beperkingen. Rust, kalmte en een open houding dragen hieraan bij.",
+    "Naast dat werk rondde ik in 2025 mijn opleiding Toegepaste Psychologie af. Deze opleiding vraagt je om kritisch te kijken naar zowel beleid als het methodisch handelen binnen een team. Ik zie daardoor eerder waar iets vandaan komt en wat er nodig is om een stap verder te komen. Dit maakt mij, in combinatie met de jarenlange ervaring in de zorg, een enthousiaste en gedreven hulpverlener van toegevoegde waarde.",
+    "Sinds januari 2026 werk ik als zelfstandig ondernemer onder de naam Monster Zorg. Zo kan ik zijn waar ik het hardst nodig ben, of dat nu voor ad hoc diensten is of voor een langere periode.",
   ],
   feitenTitel: "In het kort",
   feiten: [
     { label: "Ervaring", waarde: "Ruim 8 jaar in de zorg" },
     { label: "Opleiding", waarde: "Hbo Toegepaste Psychologie, 2025" },
+    { label: "Werkwijze", waarde: "Holistisch, kijkt naar mogelijkheden" },
     { label: "Woonplaats", waarde: "Gouda" },
     { label: "Werkgebied", waarde: contact.werkgebied },
   ],
@@ -105,12 +107,12 @@ export const diensten = {
   items: [
     {
       icoon: "hand" as const,
-      titel: "Woonbegeleiding",
+      titel: "(Persoonlijke) begeleiding",
       tekst:
-        "Begeleiding van bewoners in een woonvorm of beschermd wonen. Van dagstructuur en het huishouden tot het gesprek dat er echt toe doet. Ik draai mee in het team en pak diensten op waar het nodig is.",
+        "Begeleiding van cliënten in een woonvorm of beschermd wonen. Met persoonlijke aandacht en oog voor wat iemand nodig heeft, gericht op een menswaardig bestaan. Ik draai mee in het team en pak ad hoc diensten op waar het nodig is.",
       punten: [
         "Dagelijkse begeleiding en dagstructuur",
-        "Omgaan met onbegrepen gedrag",
+        "Rustig en kalm bij onbegrepen gedrag",
         "Rapporteren en samenwerken met het team",
       ],
     },
@@ -122,7 +124,7 @@ export const diensten = {
       punten: [
         "Gesprekken en coaching op maat",
         "Meedenken over gedrag en aanpak",
-        "Ondersteuning van collega's in het team",
+        "Kritisch meekijken naar beleid en methodisch handelen in het team",
       ],
     },
   ],
@@ -141,7 +143,7 @@ export const ervaring = {
       organisatie: "Monster Zorg",
       soort: "werk" as const,
       tekst:
-        "Zelfstandig aan de slag bij zorginstellingen en via bemiddelingsbureaus.",
+        "Zelfstandig aan de slag bij zorginstellingen en via bemiddelingsbureaus, voor ad hoc diensten of een langere periode.",
     },
     {
       periode: "2025 - heden",
@@ -159,15 +161,15 @@ export const ervaring = {
     },
     {
       periode: "2022 - 2025",
-      rol: "Woonbegeleider",
+      rol: "Persoonlijk begeleider",
       organisatie: "Profila Zorggroep, Rotterdam",
       soort: "werk" as const,
       tekst:
-        "Begeleiding van bewoners in een woonvorm, met aandacht voor structuur en eigen regie.",
+        "Persoonlijk begeleider van cliënten in een woonvorm, met persoonlijke aandacht en oog voor wat iemand nodig heeft.",
     },
     {
       periode: "2017 - 2022",
-      rol: "Woonbegeleider",
+      rol: "Begeleider",
       organisatie: "Profila Zorggroep, Puttershoek",
       soort: "werk" as const,
       tekst:
@@ -175,7 +177,7 @@ export const ervaring = {
     },
     {
       periode: "2016 - 2017",
-      rol: "Stagiair woonbegeleiding",
+      rol: "Stagiair begeleiding",
       organisatie: "Profila Zorg",
       soort: "werk" as const,
       tekst: "De start van bijna tien jaar in de zorg.",
@@ -190,25 +192,25 @@ export const waarom = {
       icoon: "hart" as const,
       titel: "Ruim 8 jaar ervaring",
       tekst:
-        "Acht jaar woonbegeleiding betekent dat weinig situaties me nog verrassen. Ik weet hoe een team draait en waar ik kan bijspringen.",
+        "Acht jaar als begeleider betekent dat weinig situaties me nog verrassen. Ik kijk naar mogelijkheden in plaats van beperkingen en weet waar ik in een team kan bijspringen.",
     },
     {
       icoon: "brein" as const,
       titel: "Psychologische blik",
       tekst:
-        "Door mijn opleiding Toegepaste Psychologie zie ik eerder waar gedrag vandaan komt.",
+        "Door mijn opleiding Toegepaste Psychologie zie ik eerder waar gedrag vandaan komt en kijk ik kritisch mee naar beleid en methodisch handelen.",
     },
     {
       icoon: "schild" as const,
-      titel: "Afspraak is afspraak",
+      titel: "Rust en betrouwbaarheid",
       tekst:
-        "Ik kom op tijd, rapporteer netjes en zeg het gewoon als iets niet lukt.",
+        "Rust, kalmte en een open houding. Ik kom op tijd, rapporteer netjes en zeg het gewoon als iets niet lukt.",
     },
     {
       icoon: "agenda" as const,
       titel: "Flexibel inzetbaar",
       tekst:
-        "Losse diensten, een langere periode of een klus tussendoor. In overleg is er veel mogelijk.",
+        "Ad hoc diensten, een langere periode of een klus tussendoor. Zo ben ik waar ik het hardst nodig ben.",
     },
   ],
 };
