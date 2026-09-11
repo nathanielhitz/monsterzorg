@@ -22,16 +22,12 @@ npm run build   # productiebuild
 | `components/*.tsx` | De secties: Nav, Hero, Over, Diensten, Ervaring, Waarom, Contact, Footer |
 | `public/jarno.png` | Portretfoto |
 
-## Nog invullen
+## Gegevens
 
-Deze gegevens staan als placeholder in `content.ts` en moeten nog van Jarno komen:
-
-- `[KVK-NUMMER]`
-- `[WERKGEBIED]`
-
-Ook nog te bevestigen: de domeinnaam (`site.url` staat nu op de aanname `monsterzorg.nl`)
-en de definitieve dienstenlijst. Zolang een veld een placeholder is, blijven de bel- en
-mailknoppen bewust zonder werkende link en laat de Schema.org-markup dat veld weg.
+Alle gegevens van Jarno zijn ingevuld (stand 11 september 2026). Komt er later een
+onbekend veld bij, zet het dan als placeholder tussen blokhaken in `content.ts`. Zolang een
+veld een placeholder is, blijven de bel- en mailknoppen zonder werkende link en laat de
+Schema.org-markup dat veld weg.
 
 ## Deploy
 

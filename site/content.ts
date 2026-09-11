@@ -2,10 +2,10 @@
  * Alle teksten en gegevens van de site staan in dit bestand.
  * Pas hier iets aan en het verandert overal op de pagina.
  *
- * Nog onbekende gegevens staan als placeholder tussen blokhaken, bijvoorbeeld
- * [TELEFOONNUMMER]. Vul die in zodra Jarno ze heeft doorgegeven. De helper
- * isIngevuld() hieronder zorgt ervoor dat lege placeholders geen kapotte
- * tel:-links of onjuiste Schema.org-gegevens opleveren.
+ * Alle gegevens zijn ingevuld. Komt er later toch een onbekend veld bij, zet het
+ * dan als placeholder tussen blokhaken, bijvoorbeeld [TELEFOONNUMMER]. De helper
+ * isIngevuld() hieronder zorgt ervoor dat zo'n placeholder geen kapotte
+ * tel:-links of onjuiste Schema.org-gegevens oplevert.
  */
 
 /** True zolang de waarde nog een placeholder is, bijvoorbeeld "[TELEFOONNUMMER]". */
@@ -50,8 +50,10 @@ export const persoon = {
 export const contact = {
   telefoon: "06 45046864",
   email: "info@monsterzorg.nl",
-  kvk: "[KVK-NUMMER]",
-  werkgebied: "[WERKGEBIED]",
+  kvk: "99391937",
+  werkgebied: "Zuid-Holland, in overleg ook Utrecht en Noord-Holland",
+  /** Losse regio's voor de Schema.org-markup (areaServed). */
+  werkgebiedRegios: ["Zuid-Holland", "Utrecht", "Noord-Holland"],
   linkedin: "https://www.linkedin.com/in/jarnomonster",
 };
 
@@ -218,7 +220,7 @@ export const waarom = {
 export const contactSectie = {
   titel: "Even overleggen of direct inplannen?",
   tekst:
-    "Bel of mail gerust. Ik reageer meestal binnen een dag en denk graag mee over wat er nodig is.",
+    "Bel of mail gerust. Op mail reageer ik binnen twee werkdagen en ik denk graag mee over wat er nodig is.",
   labels: {
     telefoon: "Telefoon",
     email: "E-mail",

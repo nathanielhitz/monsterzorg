@@ -61,10 +61,11 @@ export default function JsonLd() {
   if (isIngevuld(contact.telefoon)) dienstSchema.telephone = contact.telefoon;
   if (isIngevuld(contact.kvk)) dienstSchema.identifier = contact.kvk;
   if (isIngevuld(contact.werkgebied)) {
-    dienstSchema.areaServed = {
-      "@type": "Place",
-      name: contact.werkgebied,
-    };
+    dienstSchema.areaServed = contact.werkgebiedRegios.map((regio) => ({
+      "@type": "AdministrativeArea",
+      name: regio,
+      containedInPlace: { "@type": "Country", name: "Nederland" },
+    }));
   }
 
   const schema = {
