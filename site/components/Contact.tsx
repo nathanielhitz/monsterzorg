@@ -133,8 +133,8 @@ export default function Contact() {
                     <dt className="text-[13px] text-bone/60">
                       {contactSectie.labels.werkgebied}
                     </dt>
-                    <dd className="mt-0.5 text-[17px] font-medium">
-                      {contact.werkgebied}
+                    <dd className="mt-0.5 text-[17px] font-medium leading-snug">
+                      {contact.werkgebiedZin}
                     </dd>
                   </div>
                 </div>

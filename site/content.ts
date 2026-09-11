@@ -51,7 +51,10 @@ export const contact = {
   telefoon: "06 45046864",
   email: "info@monsterzorg.nl",
   kvk: "99391937",
-  werkgebied: "Zuid-Holland, in overleg ook Utrecht en Noord-Holland",
+  werkgebied: "Zuid-Holland, en in overleg ook Utrecht en Noord-Holland",
+  /** Iets langere zin voor de contactsectie, leest fijner dan een opsomming. */
+  werkgebiedZin:
+    "Ik werk vooral in Zuid-Holland, maar Utrecht en Noord-Holland zijn in overleg ook geen probleem.",
   /** Losse regio's voor de Schema.org-markup (areaServed). */
   werkgebiedRegios: ["Zuid-Holland", "Utrecht", "Noord-Holland"],
   linkedin: "https://www.linkedin.com/in/jarnomonster",
